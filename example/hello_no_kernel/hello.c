@@ -1,9 +1,10 @@
-// test file for compiling for f256jr
+// test file for compiling for f256jr - no use of kernel
+
 // compile example:
 
-//cc65 -g --cpu 65C02 -t none -Os -I ../include -D_F256JR_ -T hello.c -o hello.s
+//cc65 -g --cpu 65C02 -t none -Os -D_F256JR_ -T hello.c -o hello.s
 //ca65 -t none hello.s
-//ld65 -C ../cfg/f256jr.cfg -o hello.rom hello.o ../lib/f256jr.lib -m hello.map -Ln labels.lbl
+//ld65 -C f256jr.cfg -o hello.rom hello.o f256jr.lib -m hello.map -Ln labels.lbl
 
 /*****************************************************************************/
 /*                                Includes                                   */
